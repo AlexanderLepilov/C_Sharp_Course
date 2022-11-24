@@ -8,13 +8,18 @@ int num2 = int.Parse(Console.ReadLine());
 
 if (num1 > num2)
 {
-    Console.WriteLine("num1 больше", num1);
-    Console.WriteLine("num2 меньше", num2);
+    Console.WriteLine($"max = {num1}");
+    Console.Write($"min = {num2}");
+}
+else if (num2 > num1)
+{
+    Console.WriteLine($"max = {num2}");
+    Console.Write($"min = {num1}");
 }
 else
 {
-   Console.WriteLine("num2 больше", num2);
-   Console.WriteLine("num1 меньше", num1);
+    Console.Write("Числа равны, не возможно определить min и max");
 }
+
 
 
