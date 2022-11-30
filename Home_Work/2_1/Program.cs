@@ -1,11 +1,10 @@
 ﻿// Напишите программу, которая выводит случайное
 // трёхзначное число и удаляет вторую цифру этого числа.
 
-Console.WriteLine("Write a number: ");
-string NumberA(int num)
+int num = new Random().Next(100, 1000);
 {
     if ((-1000 < num && num < -100) || (num < 1000 && num > 100))
-        return $"{num / 100 * 10 + num % 10}";
-    return "Error";
+        Console.Write($"{num} -> {num / 100 * 10 + num % 10}");
+    else
+        Console.WriteLine($"{num} -> " + "Error");
 }
-Console.Write(NumberA(int.Parse(Console.ReadLine())));

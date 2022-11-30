@@ -2,11 +2,10 @@
 // и на выходе показывает вторую цифру этого числа.
 
 Console.WriteLine("Write a number: ");
-string NumberA(int num)
+int num = int.Parse(Console.ReadLine());
 {
     if ((-1000 < num && num < -100) || (num < 1000 && num > 100))
-        return $"{num / 10 % 10}";
-    return "Error";
+        Console.Write($"{num} -> {num / 10 % 10}");
+    else
+        Console.WriteLine($"{num} -> " + "Error");
 }
-
-Console.Write(NumberA(int.Parse(Console.ReadLine())));
