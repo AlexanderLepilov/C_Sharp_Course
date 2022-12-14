@@ -46,9 +46,9 @@ int column = int.Parse(Console.ReadLine());
 Console.Write("Enter a number to search for: ");
 int number = int.Parse(Console.ReadLine());
 
-int[,] arr_1 = MassNums(row, column,
-                        int.Parse(Console.ReadLine()),
-                        int.Parse(Console.ReadLine()));
+int[,] arr_1 = MassNums(row, column);
+                        int.Parse(Console.ReadLine());
+                        int.Parse(Console.ReadLine());
 Print(arr_1);
 
 Console.Write($"Element {number} located in the matrix - {OccurrenceElement(arr_1, number)}"); 
