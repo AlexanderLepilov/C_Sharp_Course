@@ -46,3 +46,10 @@ int[,] arr_1 = MassNums(row, column,
                         int.Parse(Console.ReadLine()),
                         int.Parse(Console.ReadLine()));
 Print(arr_1);
+
+Console.Write("Enter the line position: ");
+int first = int.Parse(Console.ReadLine());
+Console.Write("Enter the colomn position: ");
+int second = int.Parse(Console.ReadLine());
+
+Console.WriteLine(Element(arr_1, first, second));
